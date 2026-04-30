@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "lightcraft",
+  "version": "${version}",
+  "name": "Light Craft Client",
+  "description": "Cinematic loading screen and intro sequence for Light Craft Client. Modern, minimalist, neon-futuristic UX.",
+  "authors": ["Light Craft / Moon Play Team"],
+  "contact": {
+    "homepage": "https://lightcraft.example",
+    "sources": "https://lightcraft.example"
+  },
+  "license": "MIT",
+  "icon": "assets/lightcraft/icon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.lightcraft.client.LightCraftClientInit"]
+  },
+  "mixins": [
+    "lightcraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
